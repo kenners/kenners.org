@@ -15,8 +15,11 @@
 
         <script src="{{ site.url }}/js/vendor/custom.modernizr.js"></script>
 
-        <link rel="apple-touch-icon" href="{{ site.url }}/img/apple-touch-icon.png">
-        <link rel="shortcut icon" href="{{ site.url }}/img/favicon.png">
+        <link rel="apple-touch-icon" href="{{ site.url }}/img/apple-touch-icon-57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/img/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/img/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/img/apple-touch-icon-144.png">
+        <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
     </head>
     <body>
 
@@ -29,10 +32,10 @@
           <li><a href="{{ site.url }}/talks">Talks</a></li>
         </ul>
       </nav>
-      <section class="small-3 offset-2 columns">
+      <section class="small-4 small-offset-1 columns">
         <ul class="inline-list social-links">
           <li><a href="mailto:kenrickturner@gmail.com" title="Send Kenrick email" class="ss-icon ss-social-circle">email</a></li>
-          <li><a href="https://flickr.com/photos/kenrickturner" title="Kenrick's photos are on Flickr" class="ss-icon ss-social-circle">flickr</a></li>
+          <li><a href="http://flickr.com/photos/kenrickturner" title="Kenrick's photos are on Flickr" class="ss-icon ss-social-circle">flickr</a></li>
           <li><a href="https://twitter.com/kenrick" title="Follow Kenrick on Twitter" class="ss-icon ss-social-circle">twitter</a></li>
           <li><a href="https://github.com/kenners" title="Kenrick's code is on GitHub" class="ss-icon ss-social-circle">octocat</a></li>
           <li><a href="{{ site.url }}/feed.xml" title="Subscribe via RSS" class="ss-icon ss-social-circle">rss</a></li>
@@ -48,15 +51,15 @@
       <section class="top-bar-section">
         <ul class="centerhack">
           <li class="divider"></li>
-          <li><a href="{{ site.url }}" {% if page.title == nil %}class="active"{% endif %}>Home</a></li>
+          <li{% if page.title == nil %} class="active"{% endif %}><a href="{{ site.url }}">Home</a></li>
           <li class="divider"></li>
-          <li><a href="{{ site.url }}/about" {% if page.title == 'About' %}class="active"{% endif %}>About</a></li>
+          <li{% if page.title == 'About' %} class="active"{% endif %}><a href="{{ site.url }}/about">About</a></li>
           <li class="divider"></li>
-          <li><a href="{{ site.url }}/posts" {% if page.title == 'Archives' %}class="active"{% endif %}>Archives</a></li>
+          <li{% if page.title == 'Archives' %} class="active"{% endif %}><a href="{{ site.url }}/posts">Archives</a></li>
           <li class="divider"></li>
-          <li><a href="{{ site.url }}/projects" {% if page.title == 'Projects' %}class="active"{% endif %}>Projects</a></li>
+          <li{% if page.title == 'Projects' %} class="active"{% endif %}><a href="{{ site.url }}/projects">Projects</a></li>
           <li class="divider"></li>
-          <li><a href="{{ site.url }}/talks" {% if page.title == 'Talks' %}class="active"{% endif %}>Talks</a></li>
+          <li{% if page.title == 'Talks' %} class="active"{% endif %}><a href="{{ site.url }}/talks">Talks</a></li>
         </ul>
       </section>
     </nav>
@@ -72,11 +75,8 @@
     {{ content }}
   </section>
   {% include footer.html %}
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? '{{ site.url }}/js/vendor/zepto' : '{{ site.url }}/js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
+  <!--<script src="{{ site.url }}/js/vendor/jquery.js"></script>-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <script src="{{ site.url }}/js/foundation/foundation.js"></script>
   <script src="{{ site.url }}/js/foundation/foundation.clearing.js"></script>

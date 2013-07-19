@@ -71,7 +71,7 @@ module Jekyll
             output += "        <br/><span class=\"alt-flickr\"><a href=\"#{photo['urlFlickr']}\" target=\"_blank\">Voir la video en grand</a></span>\n"
             output += "      </li>\n"
           else
-            output += "      <li><a class=\"th\" href=\"#{photo['urlOpened']}\"><img src=\"#{photo['urlThumb']}\"></a></li>\n"
+            output += "      <li><a class=\"th\" href=\"#{photo['urlOpened']}\"><img src=\"#{photo['urlThumb']}\" data-caption=\"#{photo['title']}\"></a></li>\n"
           end
         end
 
@@ -115,6 +115,7 @@ module Jekyll
         urlVideo   = String.new
 
         sizes = flickr.photos.getSizes(:photo_id => id)
+        info = flickr.photos.getInfo(:photo_id => id)
 
         urlThumb       = sizes.find {|s| s.label == @photoThumbnail }
         urlEmbeded     = sizes.find {|s| s.label == @photoEmbeded }

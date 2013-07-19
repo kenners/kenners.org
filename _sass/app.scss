@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-links {
-  font-size: emCalc(18px);
+  font-size: emCalc(20px);
 }
 
 .polaroid {
@@ -132,6 +132,5 @@ ul.horiz-list-center {
 
 ul.horiz-list-center li {
   display: inline-block;
-  padding-left: emCalc(10px);
-  padding-right: emCalc(10px);
+  padding-right: emCalc(15px);
 }
