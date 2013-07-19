@@ -1,4 +1,7 @@
 _site
 *.scssc
-
+css/app.css
 css/.DS_Store
+.DS_Store
+_cache/flickr
+.sass-cache
