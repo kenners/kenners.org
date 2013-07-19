@@ -11,7 +11,7 @@ layout: default
         {% else %}
             <h2><a href="{{site.url}}{{ post.url }}" class="blog-post">{{ post.title }}</a></h2>
         {% endif %}
-       <p class="metabar"><time datetime="{{ post.date }}">{{ post.date | ordinal }}</time> <span class="hide-on-print">&middot; <a href="{{site.url}}{{ post.url }}" title="Permalink">∞</a></span></p>
+       <p class="metabar"><time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M%z" }}">{{ post.date | ordinal }}</time> <span class="hide-on-print">&middot; <a href="{{site.url}}{{ post.url }}" title="Permalink">∞</a></span></p>
         <div>
             {{ post.content }}
         </div>

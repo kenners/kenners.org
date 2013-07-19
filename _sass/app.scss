@@ -80,6 +80,11 @@ article {
   padding-bottom: emCalc(40px);
 }
 
+div.footnotes {
+  border-top: 1px solid lighten($body-font-color, 60%);
+  padding-top: emCalc(20px);
+}
+
 .footnotes li {
   font-size: 80%;
 }
