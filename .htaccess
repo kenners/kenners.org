@@ -1,0 +1,6 @@
+ErrorDocument 404 /404.html
+
+AuthType Basic
+AuthName "Beta for kenners.org"
+AuthUserFile /home/kenrick/beta.htpasswd
+Require valid-user
