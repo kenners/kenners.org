@@ -2,7 +2,7 @@ name: Kenrick Turner
 description: Writings and talks by Kenrick Turner. Kenrick is a doctor with the British Antarctic Survey.
 blurb: Our Man in Antarctica
 pygments: true
-url: http://localhost:4000
+url: http://beta.kenners.org
 permalink: /:categories/:title
 relative_permalinks: false
 timezone: Europe/London
