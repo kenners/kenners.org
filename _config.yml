@@ -13,7 +13,7 @@ rdiscount:
   extensions: [footnotes]
 
 include: ['.htaccess']
-exclude: ['config.rb','Rakefile']
+exclude: ['config.rb','Rakefile','s3_website.yml']
 excerpt_separator: "\n\n"
 
 flickr:
