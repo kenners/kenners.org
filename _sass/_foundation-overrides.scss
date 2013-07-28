@@ -18,7 +18,7 @@ $header-font-color: #444;
 $code-font-weight: normal;
 
 $list-style-position: inside;
-$list-side-margin: emCalc(20px);
+$list-side-margin: emCalc(20);
 
 $topbar-margin-bottom: 0;
 
@@ -33,7 +33,7 @@ $topbar-margin-bottom: 0;
 }
 
 header {
-    padding-top: emCalc(20px);
+    padding-top: emCalc(20);
 }
 
 .titletext a {
@@ -52,7 +52,7 @@ header {
 }
 
 .titlebar {
-    padding-top: emCalc(110px);
+    padding-top: emCalc(110);
 }
 
 .forename {
@@ -80,18 +80,18 @@ time {
 
 .listing {
   list-style-type: none;
-  line-height: emCalc(50px);
+  line-height: emCalc(50);
   padding: 0;
   margin: 0;
 }
 
 article {
-  padding-bottom: emCalc(40px);
+  padding-bottom: emCalc(40);
 }
 
 div.footnotes {
   border-top: 1px solid lighten($body-font-color, 60%);
-  padding-top: emCalc(20px);
+  padding-top: emCalc(20);
 }
 
 .footnotes li {
@@ -114,12 +114,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-links {
-  font-size: emCalc(20px);
+  font-size: emCalc(20);
 }
 
 .polaroid {
   float: left;
-  margin: 0 emCalc(20px) emCalc(10px) 0;
+  margin: 0 emCalc(20) emCalc(10) 0;
   transform: rotate(-2deg);
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 footer {
-  padding-top: emCalc(50px);
+  padding-top: emCalc(50);
 }
 
 
@@ -146,5 +146,55 @@ ul.horiz-list-center {
 
 ul.horiz-list-center li {
   display: inline-block;
-  padding-right: emCalc(15px);
+  padding-right: emCalc(15);
 }
+
+.orbit-flickr-wrapper {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.orbit-flickr-wrapper:after {
+    padding-top: 75%;
+    display: block;
+    content: '';
+}
+
+.orbit-caption-body {
+  font-size: emCalc(15);
+  font-style: oblique;
+}
+
+.orbit-caption a, .flickr-caption a {
+  color: #fff;
+}
+
+.orbit-caption a:hover, .flickr-caption a:hover {
+  color: darken(#fff, 30%)
+}
+
+.flickr-photo-container {
+  background: #000;
+  position: relative;
+  display: inline-block;
+  margin-bottom: emCalc(20);
+}
+
+.flickr-caption {
+  bottom: 0;
+  position: absolute;
+  padding-top: emCalc(12);
+  padding-left: emCalc(16);
+  padding-right: emCalc(16);
+  padding-bottom: emCalc(12);
+  line-height: emCalc(22);
+  color: #fff;
+  background-color: #000;
+  font-size: emCalc(14);
+}
+$orbit-caption-bg: #000;
