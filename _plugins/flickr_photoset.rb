@@ -24,15 +24,18 @@ module Jekyll
       params = Shellwords.shellwords markup
 
       @photoset       = params[0]
-      @photoThumbnail = params[1] || "Large Square"
-      @photoEmbeded   = params[2] || "Medium 800"
-      @photoOpened    = params[3] || "Large"
-      @video          = params[4] || "Site MP4"
+      @galleryType    = params[1] || "clearing"
+      @photoThumbnail = params[2] || "Large Square"
+      @photoEmbeded   = params[3] || "Medium 640"
+      @photoOpened    = params[4] || "Large"
+      @video          = params[5] || "Site MP4"
     end
 
     def render(context)
 
       flickrConfig = context.registers[:site].config["flickr"]
+
+      galleryType = @galleryType
 
       if cache_dir = flickrConfig['cache_dir']
         path = File.join(cache_dir, "#{@photoset}-#{@photoThumbnail}-#{@photoEmbeded}-#{@photoOpened}-#{@video}.yml")
@@ -41,37 +44,50 @@ module Jekyll
         else
           photos = generate_photo_data(@photoset, flickrConfig)
           File.open(path, 'w') {|f| f.print(YAML::dump(photos)) }
+          photos = YAML::load(File.read(path))
         end
       else
         photos = generate_photo_data(@photoset, flickrConfig)
       end
 
-      if photos.count == 1
-        if photos[0]['urlVideo'] != ''
-          output = "<p style=\"text-align: center;\">\n"
-          output += "  <video controls poster=\"#{photos[0]['urlEmbeded']}\">\n"
-          output += "    <source src=\"#{photos[0]['urlVideo']}\" type=\"video/mp4\" />\n"
-          output += "  </video>\n"
-          output += "  <br/><span class=\"alt-flickr\"><a href=\"#{photos[0]['urlFlickr']}\" target=\"_blank\">Voir la video en grand</a></span>\n"
-          output += "</p>\n"
-        else
-          output = "<p style=\"text-align: center;\"><img class=\"th\" src=\"#{photos[0]['urlEmbeded']}\" title=\"#{photos[0]['title']}\" longdesc=\"#{photos[0]['title']}\" alt=\"#{photos[0]['title']}\" /></p>\n"
+      if galleryType == 'orbit'
+        output = "<div class=\"slideshow-wrapper row\"><div class=\"large-10 small-12 small-centered columns\">\n"
+        output += "  <div class=\"preloader\"></div>\n"
+        output += "  <ul data-orbit data-options=\"bullets: false; timer: false; animation: 'fade'; animation_speed: 1000;\">\n"
+
+        photos.each_with_index do |photo, i|
+          if photo['urlVideo'] != ''
+            output += ""
+          else
+            output += "    <li class=\"\" data-orbit-slide=\"flickr-#{photo['id']}\">\n"
+            output += "      <div class=\"orbit-flickr-wrapper\" style=\"background-image: url(\'#{photo['urlOpened']}\');\"></div>\n"
+            output += "      <div class=\"orbit-caption show-for-landscape hide-for-small\">\n"
+            output += "        <span class=\"orbit-caption-title\">#{photo['title']}</span>\n"
+            output += "        <span class=\"right\">\n"
+            output += "          <a href=\"#{photo['urlPhotoPage']}\" class=\"ss-icon ss-social-circle\" title=\"View on Flickr\">flickr</a>\n"
+            output += "        </span><br>\n"
+            output += "        <span class=\"orbit-caption-body\">#{photo['caption']}</span>\n"
+            output += "      </div>\n"
+            output += "    </li>\n"
+          end
         end
+        output += "  </ul>\n"
+        output += "</div></div>\n"
       else
-        output = "<div class=\"row\">\n"
-        output += "  <div class=\"large-11 columns large-centered\">\n"
+        # Therefore just a normal clearing gallery
+        output =  "<div class=\"row\">\n"
+        output += "  <div class=\"large-11 small-centered columns\">\n"
         output += "    <ul class=\"clearing-thumbs\" data-clearing>\n"
 
         photos.each_with_index do |photo, i|
           if photo['urlVideo'] != ''
-            output += "      <li>\n"
-            output += "        <video controls poster=\"#{photo['urlEmbeded']}\">\n"
-            output += "          <source src=\"#{photo['urlVideo']}\" type=\"video/mp4\" />\n"
-            output += "        </video>\n"
-            output += "        <br/><span class=\"alt-flickr\"><a href=\"#{photo['urlFlickr']}\" target=\"_blank\">Voir la video en grand</a></span>\n"
-            output += "      </li>\n"
+            output += ""
           else
-            output += "      <li><a class=\"th\" href=\"#{photo['urlOpened']}\"><img src=\"#{photo['urlThumb']}\" data-caption=\"#{photo['title']}\"></a></li>\n"
+            output += "      <li>\n"
+            output += "        <a class=\"th\" href=\"#{photo['urlOpened']}\">\n"
+            output += "          <img src=\"#{photo['urlThumb']}\" data-caption=\"<span class='orbit-caption-title'>#{photo['title']}</span><br><span class='orbit-caption-body'>#{photo['caption']}</span>\">\n"
+            output += "        </a>\n"
+            output += "      </li>\n"
           end
         end
 
@@ -79,6 +95,7 @@ module Jekyll
         output += "  </div>\n"
         output += "</div>\n"
       end
+
 
       # return content
       output
@@ -113,6 +130,8 @@ module Jekyll
         urlEmbeded = String.new
         urlOpened  = String.new
         urlVideo   = String.new
+        urlPhotoPage = String.new
+        caption    = String.new
 
         sizes = flickr.photos.getSizes(:photo_id => id)
         info = flickr.photos.getInfo(:photo_id => id)
@@ -121,8 +140,11 @@ module Jekyll
         urlEmbeded     = sizes.find {|s| s.label == @photoEmbeded }
         urlOpened      = sizes.find {|s| s.label == @photoOpened }
         urlVideo       = sizes.find {|s| s.label == @video }
+        urlPhotoPage   = info.urls.find {|u| u.type == 'photopage'}
+        caption        = info['description']
 
-        photo = FlickrPhoto.new(title, urlThumb, urlEmbeded, urlOpened, urlVideo)
+
+        photo = FlickrPhoto.new(title, urlThumb, urlEmbeded, urlOpened, urlVideo, urlPhotoPage.to_s, caption, id)
         returnSet.push photo
       end
 
@@ -134,15 +156,18 @@ module Jekyll
   end
 
   class FlickrPhoto
-    attr_accessor :title, :urlThumb, :urlEmbeded, :urlOpened, :urlVideo, :urlFlickr
+    attr_accessor :title, :urlThumb, :urlEmbeded, :urlOpened, :urlVideo, :urlFlickr, :urlPhotoPage, :caption, :id
 
-    def initialize(title, urlThumb, urlEmbeded, urlOpened, urlVideo)
+    def initialize(title, urlThumb, urlEmbeded, urlOpened, urlVideo, urlPhotoPage, caption, id)
       @title      = title
       @urlThumb   = urlThumb ? urlThumb.source : ''
       @urlEmbeded = urlEmbeded ? urlEmbeded.source : ''
       @urlOpened  = urlOpened ? urlOpened.source : ''
       @urlVideo   = urlVideo ? urlVideo.source : ''
       @urlFlickr  = urlVideo ? urlVideo.url : ''
+      @urlPhotoPage = urlPhotoPage
+      @caption    = caption
+      @id = id
     end
   end
 

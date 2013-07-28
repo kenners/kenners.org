@@ -3,7 +3,7 @@ layout: post
 title:  "Example link post"
 link: http://news.bbc.co.uk
 category: post
-date:   2013-07-16 00:00
+date:   1970-07-16 00:00
 ---
 
 Some content here.
@@ -35,8 +35,6 @@ Specific files from Gists work too:
 {% gist 5555251 result.md %}
 
 Flickr photoset:
-
-{% flickr_photoset 72157627070336610 %}
 
 
 {% vimeo 26244795 %}
