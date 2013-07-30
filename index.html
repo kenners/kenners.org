@@ -5,7 +5,7 @@ layout: default
 <section class="row">
 <!-- Limit number of posts to 5 -->
 {% for post in site.categories.post limit:5 %}
-    <article id="{{post.id}}" class="small-10 small-centered columns">
+    <article id="{{post.id}}" class="large-8 small-11 small-centered columns">
         {% if post.link %}
             <h3><a href="{{ post.link }}" class="blog-linked">{{ post.title }}</a> &raquo;</h3>
         {% else %}

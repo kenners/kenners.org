@@ -1,14 +1,12 @@
 ---
 layout: default
 ---
-<section class="row">
-    <article id="{{post.id}}" class="small-10 small-centered columns">
-        {% if page.link %}
-            <h2><a href="{{ page.link }}">{{ page.title }}</a> &raquo;</h2>
-        {% else %}
-            <h2>{{ page.title }}</h2>
-        {% endif %}
         <p class="metabar"><time datetime="{{ page.date }}">{{ page.date | ordinal }}</time></p>
-        <div>{{ content }}</div>
-    </article>
-</section>
+  <article class="large-8 small-11 small-centered columns">
+    {% if page.link %}
+    <h2><a href="{{ page.link }}">{{ page.title }}</a> &raquo;</h2>
+    {% else %}
+    <h2>{{ page.title }}</h2>
+    {% endif %}
+    <div>{{ content }}</div>
+  </article>

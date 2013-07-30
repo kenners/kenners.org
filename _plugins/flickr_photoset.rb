@@ -51,7 +51,7 @@ module Jekyll
       end
 
       if galleryType == 'orbit'
-        output = "<div class=\"slideshow-wrapper row\"><div class=\"large-10 small-12 small-centered columns\">\n"
+        output = "<div class=\"slideshow-wrapper row\"><div class=\"small-12 small-centered columns\">\n"
         output += "  <div class=\"preloader\"></div>\n"
         output += "  <ul data-orbit data-options=\"bullets: false; timer: false; animation: 'fade'; animation_speed: 1000;\">\n"
 
