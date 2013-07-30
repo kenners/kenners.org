@@ -22,3 +22,6 @@ flickr:
   shared_secret:    b428b2e80fb1d978
   access_token:     72157634699050129-a50586626b9cb4f6
   access_secret:    3a6e608c9c47b56f
+
+countdown:
+  dday: 2013-11-01
