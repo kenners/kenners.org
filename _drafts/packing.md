@@ -5,8 +5,25 @@ date: 2013-07-26 01:06
 category: post
 ---
 
+
 > If I'd known how much packing I'd have to do, I'd have run again. <cite>Harry S. Truman</cite>
 
-How do you pack for Antarctica? Carefully, it turns out. Fortunately, [BAS](http://www.antarctica.ac.uk) provides some advice.
+As my friends can attest to, packing is not my forte. At present, I have various items strewn across my room in various stages of disarray. Fortunately this is only a temporary state of affairs, as if I don't have it sorted by 15th August, I run the risk of -- literally -- missing the boat.[^1]
+
+For overwinterers the luggage allowance consists of a large plastic trunk (the Personnel Box, or P-box), a 100L holdall, and around 20kg of checked-in baggage for flying down. The P-box and holdall are transported South on one of the two BAS icebreakers, in my case the [James Clarke Ross](http://www.antarctica.ac.uk/living_and_working/research_ships/rrs_james_clark_ross/), and whilst they need to be packed and handed in at BAS HQ in Cambridge by mid-August, I won't see them again until two months after I arrive in Antarctica.
 
 {% flickr_photoset 72157634798063375 "orbit" %}
+
+BAS provides all of our outdoors kit, from thermal base layers through to distinctive bright orange jackets, and seemingly countless pairs of gloves.[^2] During one afternoon in early June, I had my kitting session at the BAS warehouse in Cambridge, which involved wheeling a small shopping trolley round tall shelves stacked to the ceiling with polar gear, and picking various items from a shopping list -- deftly proving that men never grow up, their toys just get more expensive.[^3]
+
+All of this gear is transported by BAS in a separate bag from our personal baggage, and thanks to the unostentatious professionalism of the folks in Operations & Logistics, magically appears in Punta to accompany us on the final leg of the flight to Rothera.
+
+Fortunately, there's relatively little for me to pack in terms of medical gear: the annual resupply is handled separately, but I'll naturally be taking my own stethoscope and also a couple of small textbooks (such as the [Oxford Handbook of Wilderness Medicine](http://www.amazon.co.uk/gp/product/0199296618/ref=as_li_ss_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0199296618&linkCode=as2&tag=kenricktucouk-21)). As part of a small study I'm hoping to conduct with some surgical colleagues, I'm taking a compact [laparoscopic trainer](http://en.wikipedia.org/wiki/Surgery_simulator) to explore the effectiveness of distance-based learning for surgical techniques.
+
+No Antarctic kit list would be complete without some fun stuff to help get through the winter. I'm hoping to take a ukulele and learn how to play whilst away -- hopefully without inducing the ire of too many of my colleagues. A Kindle is almost a prerequisite these days, as is a suitably decent camera (the common advice appears to be double whatever you can afford), along with enough external hard disks to store 18 months worth of photos and video.
+
+My evenings' entertainment for the coming week is the marginally Herculean task of packing the assembled gear into my P-box and holdall -- I'm hoping I avoid packing the kitchen sink.
+
+[^1]: Pun intended.
+[^2]: It's these sort of simple interventions that mean freezing cold injuries (frostbite and frostnip) are virtually unheard of when down South.
+[^3]: This was probably the most surreal experience to date: I couldn't stop thinking of Bond being kitted out by Q before his next foreign escapade. Somewhat disappointingly there was a distinct lack of exploding gadgets.
