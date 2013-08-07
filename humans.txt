@@ -1,10 +1,13 @@
-/* kenners.org */
-/* Website of Kenrick Turner */
-/* humanstxt.org */
+/* TEAM */
+  Author: Kenrick Turner
+  Contact: kenrickturner@gmail.com
+  Twitter: @kenrick
 
 /* SITE */
+  Doctype:HTML5
+  Language: English
   Standards: HTML5, CSS3
-  Components: Jekyll, jQuery, Orbit, Reveal
+  Components: Jekyll, Zurb Foundation, jQuery, Orbit, Reveal
   Software: SublimeText3, Git
 
 /* JEKYLL PLUGINS */
