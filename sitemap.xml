@@ -1,0 +1,24 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for page in site.pages %}{% if page.sitemap != null and page.sitemap != empty %}<url>
+        <loc>{{ site.url }}{{ page.sitemap.url }}</loc>
+        {% if page.sitemap.lastmod == null %}<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>{% else %}<lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>{% endif %}
+        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+        <priority>{{ page.sitemap.priority }}</priority>
+    </url>
+    {% endif %}{% endfor %}{% for post in site.posts %}
+    <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        {% if post.lastmod == null %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+        {% endif %}
+        {% if post.categories contains 'post' %}<changefreq>weekly</changefreq>
+        <priority>0.7</priority>{% elsif post.categories contains 'talk' %}<changefreq>monthly</changefreq>
+        <priority>0.6</priority>{% elsif post.categories contains 'project' %}<changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        {% endif %}
+    </url>{% endfor %}
+</urlset>

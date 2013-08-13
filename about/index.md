@@ -2,6 +2,11 @@
 layout: page
 title:  "About"
 date:   2013-07-16
+sitemap:
+    url: /about
+    lastmod: 2013-07-16 00:00
+    changefreq: weekly
+    priority: 0.9
 ---
 
 <img src="{{ site.url }}/img/mug-1.jpg" width="200" class="polaroid hide-for-small">
