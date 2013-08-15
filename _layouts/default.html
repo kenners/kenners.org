@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>{{ site.name }} {% if page.title %}&middot; {{ page.title }}{% endif %}</title>
+        <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.name }}</title>
         <meta name="description" content="{{ site.description }}">
         <meta name="author" content="{{ site.name }}">
         <link rel="author" href="{{ site.url }}/humans.txt">
