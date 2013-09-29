@@ -50,7 +50,7 @@ module Jekyll
 
       output = "<div class=\"row\">"
       output += "  <div class=\"small-12 small-centered columns\">"
-      output += "    <div class=\" flickr-photo-container\"><img class=\"flickr-photo\" src=\"#{photo['urlEmbeded']}\">"
+      output += "    <div class=\"flickr-photo-container\"><img class=\"flickr-photo\" src=\"#{photo['urlEmbeded']}\">"
       output += "      <div class=\"flickr-caption show-for-landscape hide-for-small\">\n"
       output += "        <span class=\"orbit-caption-title\">#{photo['title']}</span>\n"
       output += "        <span class=\"right\">\n"
