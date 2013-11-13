@@ -13,7 +13,7 @@ module Jekyll
         end
       else
         days = (date.to_date - dday).to_i
-        "Day \##{days} in Antarctica"
+        "Day \##{days} South"
       end
     end
   end
