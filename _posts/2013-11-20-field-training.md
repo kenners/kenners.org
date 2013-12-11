@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Field Training"
+title: "Field training"
 date: 2013-11-20 17:53
 category: post
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Journey South – Part 1"
+title: "The journey South – part 1"
 date: 2013-11-13 17:53
 category: post
 ---
