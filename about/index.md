@@ -9,13 +9,13 @@ sitemap:
     priority: 0.9
 ---
 
-<img src="{{ site.url }}/img/mug-1.jpg" width="200" class="polaroid hide-for-small">
+<img src="{{ site.url }}/img/mug-2.jpg" width="200" class="polaroid hide-for-small">
 
-Kenrick is a medical doctor at [Rothera station](http://www.antarctica.ac.uk/living_and_working/research_stations/rothera/), Antarctica, working for the [British Antarctic Survey](http://www.antarctica.ac.uk).
+Kenrick is a medical doctor at [Rothera Research Station](http://www.antarctica.ac.uk/living_and_working/research_stations/rothera/), Antarctica, working for the [British Antarctic Survey](http://www.antarctica.ac.uk).
 
 Kenrick studied medicine at [Clare College](http://www.clare.cam.ac.uk), Cambridge, and is a Member of the [Royal College of Surgeons of England](http://www.rcseng.ac.uk).
 
-In addition to surgery and remote medicine, Kenrick has a strong interest in electronic medical records and their role in clinical decision making, and was the lead developer for [Uamuzi Bora](https://uamuzibora.org), an HIV electronic medical records system in Western Kenya.
+In addition to surgery and remote medicine, Kenrick has an interest in the role of electronic medical records in clinical decision making, and was the lead developer for [Uamuzi Bora](https://uamuzibora.org), an HIV electronic medical records system in Western Kenya.
 
 Kenrick is on [Twitter](http://twitter.com/kenrick), and sometimes posts pretty pictures to [Flickr](http://www.flickr.com/photos/kenrickturner).
 
