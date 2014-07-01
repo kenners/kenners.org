@@ -56,17 +56,17 @@ module Jekyll
         output += "  <ul data-orbit data-options=\"bullets: false; timer: false; animation: 'fade'; animation_speed: 1000;\">\n"
 
         photos.each_with_index do |photo, i|
-          if photo['urlVideo'] != ''
+          if photo.urlVideo != ''
             output += ""
           else
-            output += "    <li class=\"\" data-orbit-slide=\"flickr-#{photo['id']}\">\n"
-            output += "      <div class=\"orbit-flickr-wrapper\" style=\"background-image: url(\'#{photo['urlOpened']}\');\"></div>\n"
+            output += "    <li class=\"\" data-orbit-slide=\"flickr-#{photo.id}\">\n"
+            output += "      <div class=\"orbit-flickr-wrapper\" style=\"background-image: url(\'#{photo.urlOpened}\');\"></div>\n"
             output += "      <div class=\"orbit-caption show-for-landscape hide-for-small\">\n"
-            output += "        <span class=\"orbit-caption-title\">#{photo['title']}</span>\n"
+            output += "        <span class=\"orbit-caption-title\">#{photo.title}</span>\n"
             output += "        <span class=\"right\">\n"
-            output += "          <a href=\"#{photo['urlPhotoPage']}\" class=\"ss-icon ss-social-circle\" title=\"View on Flickr\">flickr</a>\n"
+            output += "          <a href=\"#{photo.urlPhotoPage}\" class=\"ss-icon ss-social-circle\" title=\"View on Flickr\">flickr</a>\n"
             output += "        </span><br>\n"
-            output += "        <span class=\"orbit-caption-body\">#{photo['caption']}</span>\n"
+            output += "        <span class=\"orbit-caption-body\">#{photo.caption}</span>\n"
             output += "      </div>\n"
             output += "    </li>\n"
           end
@@ -80,12 +80,12 @@ module Jekyll
         output += "    <ul class=\"clearing-thumbs\" data-clearing>\n"
 
         photos.each_with_index do |photo, i|
-          if photo['urlVideo'] != ''
+          if photo.urlVideo != ''
             output += ""
           else
             output += "      <li>\n"
-            output += "        <a class=\"th\" href=\"#{photo['urlOpened']}\">\n"
-            output += "          <img src=\"#{photo['urlThumb']}\" data-caption=\"<span class='orbit-caption-title'>#{photo['title']}</span><br><span class='orbit-caption-body'>#{photo['caption']}</span>\">\n"
+            output += "        <a class=\"th\" href=\"#{photo.urlOpened}\">\n"
+            output += "          <img src=\"#{photo.urlThumb}\" data-caption=\"<span class='orbit-caption-title'>#{photo.title}</span><br><span class='orbit-caption-body'>#{photo.caption}</span>\">\n"
             output += "        </a>\n"
             output += "      </li>\n"
           end
