@@ -29,3 +29,6 @@ countdown:
 
 sass:
     style: :compressed
+
+amazon:
+  tag:  kenners-21
