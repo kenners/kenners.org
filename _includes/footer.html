@@ -8,6 +8,6 @@
         <li><a href="{{ site.url }}/feed.xml" class="ss-icon ss-social-circle">rss</a></li>
       </ul>
     {% if page.title == nil %}<p class="hide-for-small"><a href="http://eepurl.com/CBEp9">Subscribe via email</a></p>{% endif %}
-    <p>&copy; 2003 - 2014 Kenrick Turner</p>
+    <p>&copy; 2003 - {{ site.time | date: "%Y"}} Kenrick Turner</p>
     </div>
   </footer>
