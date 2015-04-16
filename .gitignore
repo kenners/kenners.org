@@ -6,3 +6,4 @@ css/.DS_Store
 _cache/flickr
 .sass-cache
 Rakefile
+s3_website.yml
