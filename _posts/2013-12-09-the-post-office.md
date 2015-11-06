@@ -2,7 +2,7 @@
 layout: post
 title: "The Post Office"
 date: 2013-12-09 14:23
-category: post
+categories: [post, antarctica]
 ---
 
 If things are going to plan on an Antarctic station, the doctor's medical workload remains relatively light. In order to occupy the time the doctor traditionally takes on additional roles[^1], and at Rothera this involves running the station's shop and Post Office.

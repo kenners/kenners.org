@@ -2,7 +2,7 @@
 layout: post
 title: "Fossil Bluff"
 date: 2014-02-02 12:24
-category: post
+categories: [post, antarctica]
 ---
 
 In Antarctica, the ultimate currency is fuel. It is the resource that constrains all activities in the field, be it driving vehicles, flying aircraft, melting snow for water, cooking rations, or heating tents – they all depend on fuel. Unsurprisingly, most of the logistics of Antarctic field operations centre around getting fuel to the right place for the right time.

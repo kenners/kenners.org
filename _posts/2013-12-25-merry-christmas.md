@@ -2,7 +2,7 @@
 layout: post
 title: "Merry Christmas!"
 date: 2013-12-25 00:15
-category: post
+categories: [post, antarctica]
 ---
 
 Wherever you are in the world, may I wish you a very merry Christmas and extend seasons greetings from everyone here at Rothera station.

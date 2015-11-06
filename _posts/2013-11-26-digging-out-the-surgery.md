@@ -2,7 +2,7 @@
 layout: post
 title: "Digging out the surgery"
 date: 2013-11-26 18:37
-category: post
+categories: [post, antarctica]
 ---
 
 Whilst the temperature has been climbing at Rothera, we've still got a lot of snow on station, with some impressive drifts next to the buildings.

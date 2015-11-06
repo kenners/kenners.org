@@ -2,7 +2,7 @@
 layout: post
 title: "Dry tooling"
 date: 2014-05-14 08:45
-category: post
+categories: [post, antarctica]
 ---
 {% vimeo 94873237 %}
 

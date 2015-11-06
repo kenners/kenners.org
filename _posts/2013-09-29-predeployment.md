@@ -2,7 +2,7 @@
 layout: post
 title: "Predeployment"
 date: 2013-09-29 14:56
-category: post
+categories: [post, antarctica]
 ---
 
 {% flickr_photo 10003431094 %}

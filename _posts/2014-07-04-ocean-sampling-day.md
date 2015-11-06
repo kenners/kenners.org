@@ -2,7 +2,7 @@
 layout: post
 title: "Ocean Sampling Day"
 date: 2014-07-04 03:41
-category: post
+categories: [post, antarctica]
 ---
 
 {% vimeo 99900811 %}

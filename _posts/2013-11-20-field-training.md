@@ -2,7 +2,7 @@
 layout: post
 title: "Field training"
 date: 2013-11-20 17:53
-category: post
+categories: [post, antarctica]
 ---
 
 Antarctica presents a challenging environment to the unwary, and given that Antarctic expeditions are often as famous for their heroic failures as for their successes, BAS takes field training seriously.

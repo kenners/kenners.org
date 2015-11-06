@@ -2,7 +2,7 @@
 layout: post
 title: "Summer wildlife"
 date: 2013-11-29 07:05
-category: post
+categories: [post, antarctica]
 ---
 
 {% flickr_photo 11142294175 %}

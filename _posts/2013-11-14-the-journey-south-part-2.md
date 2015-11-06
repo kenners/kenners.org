@@ -2,7 +2,7 @@
 layout: post
 title: "The journey South - part 2"
 date: 2013-11-14 22:40
-category: post
+categories: [post, antarctica]
 ---
 
 After two days of lay-up in the Falklands waiting for the weather to clear along the Antarctic peninsula, the morning met brief from Rothera suggested that it merited an attempt to get south.
@@ -56,4 +56,3 @@ We banked steeply onto our final approach, flared, and gently touched down on Ro
 We taxied onto the apron, and with the engines shutdown, I was welcomed off the aircraft by Matt, the outgoing base commander, and given a brief tour of the station before settling in and unpacking.
 
 Whilst I've been training for this post for the past six months, it's still sinking in that I'm actually here, and the flight from the Falklands was a truly breathtaking introduction to Antarctica. It's good to be here.
-

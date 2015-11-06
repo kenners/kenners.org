@@ -7,3 +7,4 @@ _cache/flickr
 .sass-cache
 Rakefile
 s3_website.yml
+.jekyll-metadata

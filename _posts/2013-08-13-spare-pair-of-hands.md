@@ -3,7 +3,7 @@ layout: post
 title: "\"A spare pair of hands\""
 link: http://www.anantarcticdoctor.co.uk/docschool
 date: 2013-08-13 11:27
-category: post
+categories: [post, antarctica]
 ---
 Rose Drew, current doctor at Rothera:
 

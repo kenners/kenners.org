@@ -2,7 +2,7 @@
 layout: post
 title: "Stork Traverse"
 date: 2014-01-19 18:50
-category: post
+categories: [post, antarctica]
 ---
 
 Following on from some [climbing on North Stork](/post/climbing-north-stork) last month, Alex (one of the Field Assistants) led a weekend walk up along the Stork Traverse, a route that took us scrambling to the tops of North, Middle, and South Stork.

@@ -2,7 +2,7 @@
 layout: post
 title: "Winter is coming"
 date: 2014-03-26 02:00
-category: post
+categories: [post, antarctica]
 ---
 
 The last fortnight has been a busy time on station with visits from three different ships, the departure on the final two Twin Otter and Dash-7 aircraft, and the start of winter with the number of folk on station dropping from around forty to the nineteen winters for 2014.

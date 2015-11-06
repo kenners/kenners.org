@@ -2,7 +2,7 @@
 layout: post
 title: "Starry night"
 date: 2014-03-27 19:50
-category: post
+categories: [post, antarctica]
 ---
 
 {% flickr_photo 13455951854 %}

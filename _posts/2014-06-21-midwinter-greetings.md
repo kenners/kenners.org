@@ -2,7 +2,7 @@
 layout: post
 title: "Midwinter greetings"
 date: 2014-06-21 10:18
-category: post
+categories: [post, antarctica]
 ---
 
 It's Midwinter's Day in the southern hemisphere, and in Antarctica this is treated as an (inter)national holiday.

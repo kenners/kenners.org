@@ -7,6 +7,6 @@ layout: default
     {% else %}
     <h2>{{ page.title }}</h2>
     {% endif %}
-    <p class="metabar"><span class="countdown">{{ page.date | countdown }}</span> &middot; <time datetime="{{ page.date }}">{{ page.date | ordinal }}</time></p>
+    <p class="metabar">{% if page.categories contains "antarctica" %}<span class="countdown">{{ page.date | countdown }}</span> &middot; {% endif %}<time datetime="{{ page.date }}">{{ page.date | ordinal }}</time></p>
     <div>{{ content }}</div>
   </article>

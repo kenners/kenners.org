@@ -2,7 +2,7 @@
 layout: post
 title: "A clear night"
 date: 2014-08-16 01:08
-category: post
+categories: [post, antarctica]
 ---
 
 {% flickr_photo 14908923446 %}

@@ -2,7 +2,7 @@
 layout: post
 title: "A winter trip"
 date: 2014-05-12 17:21
-category: post
+categories: [post, antarctica]
 ---
 
 {% flickr_photo 13985487608 %}

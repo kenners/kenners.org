@@ -3,7 +3,7 @@ layout: post
 title: "More on Ocean Sampling Day"
 link: http://oceansamplingday.blogspot.co.uk/2014/07/ocean-sampling-day-in-antarctic-this.html
 date: 2014-07-12 16:04
-category: post
+categories: [post, antarctica]
 ---
 
 [Sabrina Heiser](http://penguinlandadventures.blogspot.com) gives [an account](http://oceansamplingday.blogspot.co.uk/2014/07/ocean-sampling-day-in-antarctic-this.html) of Rothera's contribution to [Ocean Sampling Day](http://oceansamplingday.org):

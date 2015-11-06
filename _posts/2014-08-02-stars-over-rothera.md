@@ -2,7 +2,7 @@
 layout: post
 title: "Stars over Rothera"
 date: 2014-08-02 22:33
-category: post
+categories: [post, antarctica]
 ---
 
 {% vimeo 102429175 %}

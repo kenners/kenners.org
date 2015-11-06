@@ -2,7 +2,7 @@
 layout: post
 title: "Gosmark's Gully"
 date: 2014-06-24 10:00
-category: post
+categories: [post, antarctica]
 ---
 
 A few photos from a winter daytrip near Rothera.

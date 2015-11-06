@@ -2,7 +2,7 @@
 layout: post
 title: "Time to leave the country"
 date: 2013-11-09 17:10
-category: post
+categories: [post, antarctica]
 ---
 
 After six months of medical training and a couple of weeks general Antarctic training, I'll finally leave the country tomorrow. Initially flying to the Falklands via Ascension Island, I'll get to Mount Pleasant on Monday, and then weather-permitting, flying on to Antarctica on Tuesday – a five hour flight on a [Dash-7](http://www.antarctica.ac.uk/living_and_working/aircraft_and_vehicles/aircraft/dash7.php).

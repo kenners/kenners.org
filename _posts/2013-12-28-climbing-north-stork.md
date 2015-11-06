@@ -2,7 +2,7 @@
 layout: post
 title: "Climbing North Stork"
 date: 2013-12-28 12:41
-category: post
+categories: [post, antarctica]
 ---
 
 Last Sunday, Scott, Mairi, and I spent the afternoon climbing North Stork, a 600m peak next to Rothera's skiway. Having done a small amount of climbing before in the UK (all single pitch climbing in the summer), this was a new experience: multipitch ice climbing in Antarctica!

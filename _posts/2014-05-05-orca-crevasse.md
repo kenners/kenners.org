@@ -2,7 +2,7 @@
 layout: post
 title: "Orca Crevasse"
 date: 2014-05-05 15:35
-category: post
+categories: [post, antarctica]
 ---
 
 {% vimeo 93953207 %}

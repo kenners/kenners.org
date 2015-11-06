@@ -2,7 +2,7 @@
 layout: post
 title: "Sundowner"
 date: 2014-06-14 15:54
-category: post
+categories: [post, antarctica]
 ---
 
 [![Sundowner screenshot](/img/posts/sundowner.jpg)][1]

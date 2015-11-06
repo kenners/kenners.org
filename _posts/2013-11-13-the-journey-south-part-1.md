@@ -2,7 +2,7 @@
 layout: post
 title: "The journey South – part 1"
 date: 2013-11-13 17:53
-category: post
+categories: [post, antarctica]
 ---
 
 One of the most common questions an Antarctic visitor receives is "How do you get there?", and as with many trips, the journey is often as interesting as the destination. There are two 'gateways' to Rothera: Punta Arenas in Chile, and the Falkland Islands.

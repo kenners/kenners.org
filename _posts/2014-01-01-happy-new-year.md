@@ -2,7 +2,7 @@
 layout: post
 title: "Happy New Year"
 date: 2014-01-01 00:00
-category: post
+categories: [post, antarctica]
 ---
 
 Happy new year from [Fossil Bluff](http://www.antarctica.ac.uk/living_and_working/research_stations/fossil_bluff)!

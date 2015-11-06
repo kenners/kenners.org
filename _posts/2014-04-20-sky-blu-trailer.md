@@ -2,7 +2,7 @@
 layout: post
 title: "Sky Blu trailer"
 date: 2014-04-20 16:51
-category: post
+categories: [post, antarctica]
 ---
 {% vimeo 87320081 %}
 
