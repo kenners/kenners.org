@@ -1,10 +1,9 @@
 name: Kenrick Turner
 description: Writings and talks by Kenrick Turner, a doctor working in the NHS.
-blurb: Our Man in Antarctica
 email: "kenrick&#64;kenners&#46;org"
 highlighter: pygments
 url: //kenners.org
-permalink: /:categories/:title
+permalink: /posts/:title
 relative_permalinks: false
 timezone: Europe/London
 
