@@ -3,7 +3,7 @@ description: Writings and talks by Kenrick Turner, a doctor working in the NHS.
 email: "kenrick&#64;kenners&#46;org"
 highlighter: pygments
 url: //kenners.org
-permalink: /posts/:title
+permalink: /:categories/:title
 relative_permalinks: false
 timezone: Europe/London
 
