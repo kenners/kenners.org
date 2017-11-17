@@ -12,7 +12,7 @@ rdiscount:
   extensions: [footnotes]
 
 include: ['.htaccess']
-exclude: ['Rakefile','Gemfile','s3_website.yml','_templates','script']
+exclude: ['Rakefile','Gemfile','s3_website.yml','_templates','script','vendor']
 excerpt_separator: "\n\n"
 
 flickr:
