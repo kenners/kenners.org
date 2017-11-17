@@ -3,7 +3,7 @@ _site
 css/app.css
 css/.DS_Store
 .DS_Store
-_cache/flickr
+_cache/flickr/*
 .sass-cache
 Rakefile
 s3_website.yml
