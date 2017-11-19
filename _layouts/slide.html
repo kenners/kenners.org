@@ -40,6 +40,11 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
                 center: false,
+								margin: 0.15,
+								width: {{ page.slide-width | default: 960 }},
+								height: {{ page.slide-height | default: 700 }},
+								//minScale: 0.2,
+								//maxScale: 1.5,
 				dependencies: [
 					{ src: '{{ site.url }}/js/vendor/reveal/plugin/markdown/marked.js' },
 					{ src: '{{ site.url }}/js/vendor/reveal/plugin/markdown/markdown.js' },

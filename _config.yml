@@ -31,3 +31,8 @@ sass:
 
 amazon:
   tag:  kenners-21
+
+collections:
+  talks:
+    output: true
+    permalink: /:collection/:path/
